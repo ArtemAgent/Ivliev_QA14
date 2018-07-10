@@ -31,7 +31,7 @@ public class FirstTest {
     driver.findElement(By.id("lst-ib")).sendKeys("webDriver");
     driver.findElement(By.id("lst-ib")).sendKeys(Keys.ENTER);
   }
-
+  @Test
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {
     driver.quit();
